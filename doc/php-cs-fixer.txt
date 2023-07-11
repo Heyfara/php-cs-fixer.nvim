@@ -1,0 +1,19 @@
+================================================================================
+                                                           *php-cs-fixer.nvim*
+
+This plugin allows you to run php-cs-fixer directly from neovim on the current
+file or directory.
+
+
+                                                          *php-cs-fixer.fix()*
+
+php-cs-fixer.fix({path})
+
+    Run php-cs-fixer on the given file/directory {path}.
+    >
+    php-cs-fixer.fix('/my/file.php')
+
+
+================================================================================
+
+vim:tw=78:ts=8:ft=help:norl:
