@@ -1,17 +1,14 @@
 local M = {}
 
-M.fixFile = function (path, dryRun)
+M.fix = function (path, dryRun)
     local command = 'php-cs-fixer fix ' .. path
 
     if dryRun == true then
-        command = command .. '--dry-run'
+        command = command .. ' --dry-run'
     end
 
-    local status = os.execute(command)
-    print(status)
-end
-
-M.fixDirectory = function (path, dryRun)
+    local out = vim.fn.system(command)
+    print(out)
 end
 
 return M
